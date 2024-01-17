@@ -1,0 +1,71 @@
+.container {
+    background-color: var(--bgSoft);
+    padding         : 20px;
+    border-radius   : 10px;
+
+    .top {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+        .addButton {
+            padding         : 10px;
+            background-color: #5d57d9;
+            color           : var(--text);
+            border          : none;
+            border-radius   : 5px;
+            cursor          : pointer;
+        }
+    }
+
+    .notFound {
+        display    : block;
+        padding-top: 10px;
+        text-align : center;
+        font-style : italic;
+    }
+
+    .table {
+        width: 100%;
+
+        th {
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .user {
+            display    : flex;
+            align-items: center;
+            gap        : 10px;
+
+            .image {
+                border-radius: 100rem;
+                object-fit   : cover;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            gap    : 10px;
+
+            .button {
+                padding      : 5px 10px;
+                border-radius: 5px;
+                color        : var(--text);
+                border       : none;
+                cursor       : pointer;
+            }
+
+            .view {
+                background-color: teal;
+            }
+
+            .delete {
+                background-color: crimson;
+            }
+        }
+    }
+}
